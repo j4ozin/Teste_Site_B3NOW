@@ -1,0 +1,385 @@
+/*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
+}
+
+
+body{
+    background-color: #fff
+}
+
+
+header{
+    height: 100px;
+    background: #202052;
+    padding: 0 50px;
+    color: rgb(249, 252, 252);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+
+    text-transform: uppercase;
+    color: #6cc091;
+    font-weight: 200;
+}
+
+.Menu a{
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+padding: 0 10px;
+transition: 0.4s
+;
+
+}
+
+.mostrar-menu, .esconder-menu{
+font-size: 30px;
+cursor: pointer;
+display: none;
+transition: 0.4s;
+}
+
+
+.Menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover{
+color: #6cc091;
+
+}
+
+    
+
+
+    
+
+
+
+
+
+#check{
+    display: none;
+}
+#banner{
+    padding: 0 50px;
+    background-image: url(../img/imagem10.jpg);
+    height: 45vh;
+    background-size: cover;
+    background-position: center;
+
+}
+/*Cor transparente do banner*/
+#banner::before{
+    content: '';
+    background: rgba(51, 51, 61, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 45vh;
+    left:0;
+
+}
+
+.conteudo-banner{
+    position: relative;
+    color:#fff;
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.conteudo-banner h3{
+    font-size: 30px;
+    font-weight: 400;
+    padding:10px 0px;
+
+}
+
+.conteudo-banner h3 span{
+    font-weight: 600;
+}
+
+.botao-iniciar{
+    text-decoration: none;
+    color:#fff;
+    border:1px solid #6cc091;
+    padding: 20px 40px;
+    align-self: baseline;/*essa propriedade nao ocupara outro conteudo*/
+    transition: all 0.4s;
+  /*  background: rgb(134, 47, 54);*/
+
+}
+
+.botao-iniciar:hover{
+    background: #6cc09070;
+   /* border:1px solid red;*/
+
+}
+
+/*pessoas*/
+#pessoas{
+    padding:50px 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+     
+}
+
+#pessoas img{
+    border-radius: 100%;
+    width:170px;
+    height: 170px;
+}
+
+#pessoas div{
+    padding:30px 30px;
+}
+
+#pessoas div h4{
+    color:#4d4d5c;
+    font-size: 20px;
+    margin:15px 0px;
+
+}
+
+#pessoas div p{
+    color:#4d4d5c87;
+    font-size: 18px;
+
+}
+
+
+.botao-saiba-mais{
+    display: inline-block;
+    text-decoration: none;
+    color:#6cc091;
+    padding:10px 30px;
+    border: 3px solid #6cc091;
+    border-radius: 30px;
+    margin-top: 15px;
+    transition: all 0.4s;
+}
+
+.botao-saiba-mais:hover{
+    background: #6cc091;
+    color:#fff;
+
+
+}
+
+/*ICONS*/
+#icons{
+    padding: 0px 50px; /* ate aonde vai a cor/ espaço interno, altura e largura*/
+    background: #202052;
+    color: #fff
+}
+
+    .conteudos-icons{
+        padding: 50px 50px 0px 50px;/*espaço interno,assim dizendo onde o icone ficara na tela*/
+        display: flex;/*deixa flexivel p/ movimentação*/
+        justify-content: space-between;/*separa os blocos de icons */
+        text-align: center;
+    }
+
+    .conteudos-icons div{
+        flex: 1;/*define como o intem sera posicionado dentro do espaço disponivel da tel*/
+        margin: 20px 0px;
+        border-right: 2px solid rgba(255,255,255,0.2);/*comando utilizado p/ colocar a barrinha*/
+        
+    }
+
+    #icons-mobile{/*tirou a borda la do ultimo mobile*/
+        border: none;
+    }
+
+    .conteudos-icons div i{/*mudou a cor dos icons*/
+        color: #6cc091;
+    }
+
+    .conteudos-icons div h6{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 100;
+        margin: 10px 0px;
+    }
+
+    .conteudos-icons div p{
+        color: #6cc091;
+        font-size: 15px;
+        
+    }
+
+    .botao-icons{/*centralizou o botao saiba mais da parte de baixo*/
+        text-align: center;
+        padding-bottom: 50px;
+
+    }
+    /*formulario*/
+    #contato{
+        background: #6cc091;/*cor do fundo*/
+        padding: 50px 0px;
+        color: #fff;/*cor das letras*/
+    }
+
+    #contato h4{
+        text-align: center;
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    #contato form{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .dados-form{
+        display: flex;
+    }
+    .dados-form div{
+        padding: 10px;
+        flex: 1;
+    }
+
+    form label{
+        display: block;
+        margin-bottom: 10px;
+    }
+form input,/*formatando o fomulaio*/
+form textarea{
+
+    background: #6cc091;
+    border-radius: 10px;
+    border: 2px solid #8dcca9;
+    padding: 10px 5px;
+    outline: 0;/*anula a bordinha pretada caixa de mensagem*/
+    color: #fff;
+    width: 100%;/*largura*/
+}
+form input:focus,/*dara um destaque no nosso formulario*/
+form textarea:focus{
+    border-color: #4bae77;
+    box-shadow: 0 0 0 1px #4bae77;/*sombra*/
+
+}
+
+form input::placeholder/*placeholder é a mendagem que fica dentro do fomulario*/
+form textarea::placeholder{
+    color: #fff;
+}
+
+.mensagem{
+    display: flex;/*live movimentação*/
+    flex-direction:column ;/*em coluna*/
+    padding: 10px;
+}
+
+.botao-formulario .botao-saiba-mais{
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.botao-formulario .botao-saiba-mais:hover{
+    background: #4fa776ad;
+}
+
+footer{/*seletor de tag*/
+    background: #4d4d5c;
+    color: #cccccc4a;
+    text-align: center;
+    padding: 10px 0px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){/*para telefones e tablets*/
+    .mostrar-menu,.esconder-menu{
+        display:block;
+    }
+    .Menu{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background: #4d4d5c;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 100px 0px;
+        z-index: 100;
+        transition: 0.8s;
+    }
+
+    .Menu a{
+        display: block;
+        padding: 20px;
+
+    }
+
+    .esconder-menu{
+            position: absolute;
+            top: 40px;
+            right: 40px;
+    }
+
+
+    /*'~' precedidos por*/
+    #check:checked ~ .Menu{
+        right: 0%;
+    }
+
+    /*pessoas*/
+#pessoas{
+    flex-direction: column;
+}
+/*icons*/
+.conteudos-icons{/*icons fica em colunas na versao mobile*/
+    flex-direction: column;
+}
+.conteudos-icons div{
+    border: none;/*quando chegar ao tamanho de tablet ou celular as bordas desaparecerao*/
+}
+/*formulario*/
+.dados-form{
+    flex-direction: column;/*ficara em coluna quando a tela reduzir o tamanho*/
+
+}
+
+
+
+ }/*fechametno do media*/
+
+
+
+
+
+
+/*fechamento 768px*/  /*tamanho tela celular*/
